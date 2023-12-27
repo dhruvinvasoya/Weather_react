@@ -1,0 +1,108 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+/* @import url(https://fonts.googleapis.com/css2?family=Anton&family=Rubik&display=swap); */
+/* @import url("https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@600&family=Rubik&display=swap"); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Anton', sans-serif; */
+  /* font-family: 'Rubik', sans-serif; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(48, 46, 46);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.Wrap {
+  background-color: white;
+  overflow: hidden;
+  width: 550px;
+  border-radius: 20px;
+  height: 60vh;
+  box-shadow: 0 27px 55px 10px rgba(0, 0, 0, 0.473),
+    0 17px 17px 0 rgba(0, 0, 0, 0.15);
+}
+.Search_field {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 30px;
+}
+.Search_field input {
+  width: 250px;
+  height: 32px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  padding: 0 10px;
+  font-size: 15px;
+}
+.Search_field button {
+  outline: none;
+  border: none;
+  background-color: skyblue;
+  height: 32px;
+  width: 80px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-weight: 700;
+  font-size: 15px;
+}
+.weather_Icon_main {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_icon {
+  font-size: 80px;
+  width: fit-content;
+}
+.wrap_mid {
+  width: 100%;
+  display: flex;
+}
+.location_info {
+  background-color: black;
+  width: 70%;
+  height: 120px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
+  padding: 0 50px;
+  font-size: 20px;
+}
+.date_time {
+  background-color: skyblue;
+  width: 30%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+}
+.temprature {
+  font-size: 40px;
+}
+.wrap_last {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.wrap_last div {
+  height: 110px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
